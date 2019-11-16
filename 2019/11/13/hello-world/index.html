@@ -19,7 +19,7 @@
     
     
   <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
-  <link href="/lib/pace/pace-theme-center-atom.min.css?v=1.0.2" rel="stylesheet">
+  <link href="/lib/pace/pace-theme-flash.min.css?v=1.0.2" rel="stylesheet">
 
 
 
@@ -57,6 +57,8 @@
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
+<link href="/css/iconfont.css" rel="stylesheet" type="text/css" />
+
 <link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
 
 
@@ -93,7 +95,7 @@
 <meta property="og:site_name" content="我叫随小风">
 <meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-11-13T02:35:05.475Z">
+<meta property="og:updated_time" content="2019-11-14T12:15:06.998Z">
 <meta name="twitter:card" content="summary">
 
 
@@ -104,7 +106,7 @@
     root: '/',
     scheme: 'Gemini',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -197,9 +199,9 @@
       
         
         <li class="menu-item menu-item-about">
-          <a href="/about/" rel="section">
+          <a href="/about" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
             
             关于
           </a>
@@ -290,6 +292,7 @@
 
 
  </div>
+
     </header>
 
     <main id="main" class="main">
@@ -300,6 +303,7 @@
 
   <div id="posts" class="posts-expand">
     
+
 
   
 
@@ -355,6 +359,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/11/13/hello-world/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/11/13/hello-world/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -398,6 +412,8 @@
                 </span>
               
             </div>
+          
+
           
 
           
@@ -487,8 +503,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/11/13/%E6%B5%8B%E8%AF%95/" rel="prev" title="测试">
-                测试 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/11/13/%E6%B5%8B%E8%AF%95/" rel="prev" title="嘿,陌生人,欢迎你~">
+                嘿,陌生人,欢迎你~ <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -545,6 +561,9 @@ var jiathis_config={
           
 
   
+    <div class="comments" id="comments">
+    </div>
+  
 
 
 
@@ -586,7 +605,7 @@ var jiathis_config={
                 alt="随小风" />
             
               <p class="site-author-name" itemprop="name">随小风</p>
-              <p class="site-description motion-element" itemprop="description"></p>
+              <p class="site-description motion-element" itemprop="description">犄角旮旯程序猿，兴趣使然剪辑师</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -603,25 +622,7 @@ var jiathis_config={
             
 
             
-              
-              
-              <div class="site-state-item site-state-categories">
-                <a href="/categories/index.html">
-                  <span class="site-state-item-count">1</span>
-                  <span class="site-state-item-name">分类</span>
-                </a>
-              </div>
-            
 
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                <a href="/tags/index.html">
-                  <span class="site-state-item-count">1</span>
-                  <span class="site-state-item-name">标签</span>
-                </a>
-              </div>
             
 
           </nav>
@@ -644,11 +645,16 @@ var jiathis_config={
                   </span>
                 
                   <span class="links-of-author-item">
-                    <a href="https://space.bilibili.com/259551152?spm_id_from=333.334.b_62696c692d6865616465722d6d.9" target="_blank" title="Bilibili">
+                    <a href="https://plus.google.com/yourname" target="_blank" title="Google">
                       
-                        <i class="fa fa-fw fa-youtube"></i>Bilibili</a>
+                        <i class="fa fa-fw fa-google"></i>Google</a>
                   </span>
                 
+                <span class="links-of-author-item">
+                    <a href="https://space.bilibili.com/259551152?spm_id_from=333.334.b_62696c692d6865616465722d6d.9" target="_blank" title="Bilibili">
+
+                        <span class="iconfont icon-CN_bilibiliB"></span>Bilibili</a>
+                  </span>
             </div>
           
 
@@ -665,11 +671,15 @@ var jiathis_config={
               <ul class="links-of-blogroll-list">
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://space.bilibili.com/259551152?spm_id_from=333.334.b_62696c692d6865616465722d6d.9" title="我的B站主页" target="_blank">我的B站主页</a>
+                    <a href="https://space.bilibili.com/259551152?spm_id_from=333.334.b_62696c692d6865616465722d6d.9" title="随小风的B站主页" target="_blank">随小风的B站主页</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
                     <a href="https://zyink.top/" title="四火的小站" target="_blank">四火的小站</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://diko-y.top/" title="Diko's Blog" target="_blank">Diko's Blog</a>
                   </li>
                 
               </ul>
@@ -698,8 +708,17 @@ var jiathis_config={
         </section>
       <!--/noindex-->
       
+      <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=33410933&auto=1&height=66"></iframe>
 
       
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
+
 
     </div>
   </aside>
@@ -766,11 +785,6 @@ var jiathis_config={
       </div>
     </footer>
 
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
     
 
     
@@ -859,6 +873,7 @@ var jiathis_config={
 
 
 
+
   
   
 
@@ -912,6 +927,28 @@ var jiathis_config={
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'Cae3dizN9p0AiFUvcaEYCxe6-gzGzoHsz',
+        appKey: 'yBYv817o5FzTBtEX4mH2NlLk',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
